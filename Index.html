@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time Bus Tracking</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    header, footer {
+      background: #1976d2;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    #map {
+      width: 100%;
+      height: calc(100vh - 160px); /* full screen minus header+footer */
+    }
+
+    #bus-search {
+      width: 80vw;
+      max-width: 250px;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      position: absolute;
+      top: 70px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+    }
+
+    #city-select {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    #bus-list {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      max-height: 200px;
+      overflow-y: auto;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 10px;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+    }
+
+    #bus-list div {
+      padding: 5px;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+    }
+
+    #bus-list div:hover {
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>🚍 Real-Time Bus Tracking</header>
+
+  <!-- City selection -->
+  <select id="city-select">
+    <option value="city1">City 1</option>
+    <option value="city2">City 2</option>
+  </select>
+
+  <!-- Search bar -->
+  <input type="text" id="bus-search" placeholder="Search Bus ID...">
+
+  <!-- Map -->
+  <div id="map"></div>
+
+  <!-- Bus list panel -->
+  <div id="bus-list"></div>
+
+  <!-- Footer -->
+  <footer>Powered by Hackathon Project</footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Firebase + Custom Script -->
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>

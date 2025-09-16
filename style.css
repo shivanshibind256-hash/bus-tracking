@@ -1,0 +1,165 @@
+/* Make page look clean */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Map full screen */
+#map {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  border: 2px solid #333;
+}
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+}
+
+/* Header */
+header {
+  background: #004aad;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #004aad;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* Login page */
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+  text-align: center;
+}
+
+.login-container input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+}
+#map { 
+  height: 100vh; 
+  width: 100%; 
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #1976d2;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 100px); /* full screen minus header/footer */
+}
+
+aside {
+  width: 250px;
+  background: #f4f4f4;
+  padding: 15px;
+  border-right: 1px solid #ddd;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside ul li {
+  background: #1976d2;
+  color: white;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+aside ul li:hover {
+  background: #0d47a1;
+}
+
+main {
+  flex: 1;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  background: #1976d2;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+#map {
+  height: 500px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+body, html {
+  margin:0;
+  padding:0;
+  font-family: Arial, sans-serif;
+}
+
+#map {
+  width:100%;
+  height: calc(100vh - 140px); /* header + footer height minus */
+}
+
+input#bus-search {
+  width: 80vw; /* mobile friendly width */
+  max-width: 250px;
+  padding:8px;
+  border-radius:5px;
+  border:1px solid #ccc;
+}
+
+#bus-list div {
+  padding:5px;
+  border-bottom:1px solid #ddd;
+  cursor:pointer;
+}
+#bus-list div:hover {
+  background:#f0f0f0;
+}
